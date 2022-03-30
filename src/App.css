@@ -1,15 +1,168 @@
+
 .App {
   text-align: center;
+  background-color: bisque;
+}
+.img {
+  image-orientation: flip;
+  size: 50px;
+  margin: 10px;
+  border-image: 10px solid transparent;
+}
+.ima {
+  image-orientation: flip;
+  border-image: 10px solid transparent;
+  border-radius: 50%;
+}
+.foot {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+.main {
+  background-image:url("https://images.pexels.com/photos/6425781/pexels-photo-6425781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+}
+h3 {
+  size: 50px;
+  color:white;
+
+}
+.info {
+  size: 50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.295);
+}
+.btn-email {
+  display:flex;
+  flex-direction: row;
+  background-color: #438bd3; 
+  border: none;
+  color: rgb(236, 132, 35);
+  text-align: center;
+  padding: 10px 24px;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 50px;
+  border-width:1px;
+  transition-duration: 0.4s;
+  
+}
+.aboutint {
+  border-style: dotted;
+  border-color: #7b94c7;
+}
+.btn-email:hover {
+  background-color: #f3f3f7; /* Green */
+  color: white;
+}
+.btn {
+  flex-direction: row;
+  border: round;
+  background-color:black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgb(17, 16, 17);
+}
+.btn:hover {
+  background-color: #fcfcfcfb; /* Green */
+  color: rgb(101, 82, 185);
+}
+.about {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutme {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+
+}
+.text {
+  display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-color: rgb(245, 244, 244);
+  }
+  h1 {
+    color:white;
+  }
+  h5{
+    animation-fill-mode: forwards;
+
+  }
+  .foo {
+    margin: 70px;
+    padding: 20px ;
+    border-style: groove;
+    color:snow;
+  }
+.title_link {
+  background-color: #1676d6;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  border: round;
+  color: rgb(228, 18, 18);
+  text-align: center;
+  padding: 10px 24px;
+  font-size: 15px;
+  border-radius: 50px;
+  border-width:1px;
+  transition-duration: 0.4s;
+}
+.title-link:hover {
+  background-color: #ccec19; /* Green */
+  color: white;
+}
+a {
+  color: rgb(238, 236, 237);
+} 
+p {
+  color:white;
+}
+.title {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(16, 181, 236);
   }
 }
 
